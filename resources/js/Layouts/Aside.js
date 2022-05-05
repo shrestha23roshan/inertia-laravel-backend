@@ -59,19 +59,19 @@ export default function Aside() {
                                 href={route("dashboard")}
                                 className="nav-link active"
                             >
-                                <i className="nav-icon fas fa-tachometer-alt"></i>
+                                <i className="nav-icon fas fa-tachometer-alt fa-spin"></i>
                                 <p>Dashboard</p>
+                                <span className="right badge badge-danger">
+                                        Home
+                                </span>
                             </Link>
                         </li>
 
                         <li className="nav-item">
-                            <a href="pages/widgets.html" className="nav-link">
-                                <i className="nav-icon fas fa-th"></i>
+                            <a href="#" className="nav-link">
+                                <i className="nav-icon fas fa-cog"></i>
                                 <p>
-                                    Widgets
-                                    <span className="right badge badge-danger">
-                                        New
-                                    </span>
+                                    Settings
                                 </p>
                             </a>
                         </li>

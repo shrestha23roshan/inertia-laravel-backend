@@ -11,7 +11,8 @@ class BlogController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Blog/Index');
+        $blogs = Blog::all();
+        return Inertia::render('Blog/Index', compact('blogs'));
     }
 
     public function create()
@@ -27,5 +28,9 @@ class BlogController extends Controller
         if ($blogs) {
             return redirect()->route('blog.index');
         }
+    }
+    public function edit()
+    {
+        return Inertia::render('Blog/Edit');
     }
 }
